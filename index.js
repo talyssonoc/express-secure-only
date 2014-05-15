@@ -4,7 +4,7 @@ module.exports = function secureOnly(options) {
 	options = options || {};
 
 	options.redirect = options.redirect || false;
-	options.status = options.status || 404;
+	options.status = options.status || (options.redirect ? 302 : 404);
 	options.body = options.body || http.STATUS_CODES[options.status];
 
 	return function secureOnlyMiddleware(req, res, next) {
@@ -13,7 +13,7 @@ module.exports = function secureOnly(options) {
 		}
 		else {
 			if(options.redirect) {
-				res.redirect(options.redirect);
+				res.redirect(options.status, options.redirect);
 			}
 			else {
 				res.send(options.status, options.body);
