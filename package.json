@@ -1,0 +1,27 @@
+{
+  "name": "secure-only",
+  "description": "Express middleware for only accept secure requests (i.e. HTTPS requests)",
+  "version": "0.0.1",
+  "homepage": "https://github.com/talyssonoc/express-secure-only",
+  "author": {
+    "name": "talyssonoc",
+    "email": "talyssonoc@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/talyssonoc/express-secure-only.git"
+  },
+  "bugs": {
+    "url": "https://github.com/talyssonoc/express-secure-only/issues"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "https",
+    "tls",
+    "secure"
+  ],
+  "main": "./index.js",
+  "dependencies": { },
+  "devDependencies": { }
+}
