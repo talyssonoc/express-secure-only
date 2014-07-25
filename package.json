@@ -1,7 +1,7 @@
 {
   "name": "secure-only",
   "description": "Express middleware for only accept secure requests (i.e. HTTPS requests)",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/talyssonoc/express-secure-only",
   "author": {
     "name": "talyssonoc",
@@ -21,6 +21,7 @@
     "tls",
     "secure"
   ],
+  "license" : "MIT",
   "main": "./index.js",
   "dependencies": { },
   "devDependencies": { }
